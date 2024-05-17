@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    overflow: hidden; /* Prevent scrolling the body */
+}
+
+.app-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #646266;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.app-bar h1 {
+    margin: 0;
+}
+
+.app-bar button {
+    display: none;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+    width: 100%;
+    background-color: white;
+    overflow: hidden; /* Prevent scrolling the container */
+}
+
+.blog-list {
+    flex: 1;
+    border-right: 1px solid #ddd;
+    padding: 20px;
+    overflow-y: auto; /* Enable vertical scrolling */
+    max-height: calc(100vh - 62px); /* Adjust height for app bar */
+}
+
+.blog-item {
+    cursor: pointer;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+.blog-item h2 {
+    margin: 10px 0;
+}
+
+.blog-item img {
+    width: 100%;
+    height: auto;
+    max-height: 200px; /* Set a maximum height for the images in the list */
+    object-fit: cover;
+}
+
+.blog-item:hover {
+    background-color: #f9f9f9;
+}
+
+.blog-content {
+    flex: 2;
+    padding: 20px;
+    overflow-y: auto; /* Enable vertical scrolling */
+    max-height: calc(100vh - 62px); /* Adjust height for app bar */
+}
+
+.blog-detail img {
+    width: 100%;
+    height: auto;
+    max-height: 400px; /* Set a fixed height for the images in the detail view */
+    object-fit: cover;
+    margin: 20px 0;
+}
+
+.blog-detail {
+    display: none;
+}
+
+.blog-detail.active {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .blog-list {
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+    }
+    .blog-content {
+        display: none;
+    }
+    .blog-detail.active {
+        display: block;
+    }
+    .app-bar {
+        justify-content: center; /* Center align the items */
+    }
+
+    .app-bar h1 {
+        margin: 0 auto; /* Center the title */
+        text-align: center; /* Center align the text */
+    }
+    .app-bar button {
+        display: block;
+    }
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="app-bar">
+        <button id="backButton" onclick="goBack()"><i class="fas fa-arrow-left"></i></button>
+        <h1>Blog App</h1>
+    </div>
+    <div class="container">
+        <aside class="blog-list">
+            <div class="blog-item" onclick="showBlog(0)">
+                <h2>How to Design Blog Post Headers</h2>
+                <img src="image1.jpg" alt="Blog Image 1">
+            </div>
+            <div class="blog-item" onclick="showBlog(1)">
+                <h2>Blog Title 2</h2>
+                <img src="image2.jpg" alt="Blog Image 2">
+            </div>
+            <div class="blog-item" onclick="showBlog(2)">
+                <h2>Blog Title 3</h2>
+                <img src="image3.jpg" alt="Blog Image 3">
+            </div>
+            <div class="blog-item" onclick="showBlog(3)">
+                <h2>Blog Title 4</h2>
+                <img src="image1.jpg" alt="Blog Image 1">
+            </div>
+            <div class="blog-item" onclick="showBlog(4)">
+                <h2>Blog Title 5</h2>
+                <img src="image2.jpg" alt="Blog Image 2">
+            </div>
+            <div class="blog-item" onclick="showBlog(5)">
+                <h2>Blog Title 6</h2>
+                <img src="image3.jpg" alt="Blog Image 3">
+            </div>
+            <div class="blog-item" onclick="showBlog(6)">
+                <h2>Blog Title 7</h2>
+                <img src="image1.jpg" alt="Blog Image 1">
+            </div>
+            <div class="blog-item" onclick="showBlog(7)">
+                <h2>Blog Title 8</h2>
+                <img src="image2.jpg" alt="Blog Image 2">
+            </div>
+            <div class="blog-item" onclick="showBlog(8)">
+                <h2>Blog Title 9</h2>
+                <img src="image3.jpg" alt="Blog Image 3">
+            </div>
+            <div class="blog-item" onclick="showBlog(9)">
+                <h2>Blog Title 10</h2>
+                <img src="image1.jpg" alt="Blog Image 1">
+            </div>
+        </aside>
+        <main class="blog-content" id="blogContent">
+            <article id="blog0" class="blog-detail">
+                <h1>How to Design Blog Post Headers</h1>
+                <img src="image1.jpg" alt="Blog Image 1">
+                <p>Full content of blog 1...</p>
+            </article>
+            <article id="blog1" class="blog-detail">
+                <h1>Blog Title 2</h1>
+                <img src="image2.jpg" alt="Blog Image 2">
+                <p>Full content of blog 2...</p>
+            </article>
+            <article id="blog2" class="blog-detail">
+                <h1>Blog Title 3</h1>
+                <img src="image3.jpg" alt="Blog Image 3">
+                <p>Full content of blog 3...</p>
+            </article>
+            <article id="blog3" class="blog-detail">
+                <h1>Blog Title 4</h1>
+                <img src="image1.jpg" alt="Blog Image 1">
+                <p>Full content of blog 4...</p>
+            </article>
+            <article id="blog4" class="blog-detail">
+                <h1>Blog Title 5</h1>
+                <img src="image2.jpg" alt="Blog Image 2">
+                <p>Full content of blog 5...</p>
+            </article>
+            <article id="blog5" class="blog-detail">
+                <h1>Blog Title 6</h1>
+                <img src="image3.jpg" alt="Blog Image 3">
+                <p>Full content of blog 6...</p>
+            </article>
+            <article id="blog6" class="blog-detail">
+                <h1>Blog Title 7</h1>
+                <img src="image1.jpg" alt="Blog Image 1">
+                <p>Full content of blog 7...</p>
+            </article>
+            <article id="blog7" class="blog-detail">
+                <h1>Blog Title 8</h1>
+                <img src="image2.jpg" alt="Blog Image 2">
+                <p>Full content of blog 8...</p>
+            </article>
+            <article id="blog8" class="blog-detail">
+                <h1>Blog Title 9</h1>
+                <img src="image3.jpg" alt="Blog Image 3">
+                <p>Full content of blog 9...</p>
+            </article>
+            <article id="blog9" class="blog-detail">
+                <h1>Blog Title 10</h1>
+                <img src="image1.jpg" alt="Blog Image 1">
+                <p>Full content of blog 10...</p>
+            </article>
+        </main>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
